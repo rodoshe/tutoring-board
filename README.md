@@ -1,16 +1,43 @@
-# React + Vite
+# Tutoring Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Jira-inspired task board built for managing tutoring work like sessions, follow-ups, and admin tasks in one place.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tutoring Board is a simple Kanban-style project management tool designed specifically for tutoring workflows. It helps organize tasks without overcomplicating things.
 
-## React Compiler
+Tasks move through three stages:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**To Do → In Progress → Done**
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Drag and drop tasks between columns  
+- Add, edit, and delete tasks  
+- Search tasks by title  
+- Filter by priority (High, Medium, Low)  
+- Filter by task type (Session, Admin, Follow-up, Resource)  
+- Dark mode  
+- Due dates with overdue indicators  
+- Confetti animation when tasks are completed  
+- Assignee labels for tracking responsibility  
+
+## Tech Stack
+
+- React (Vite)  
+- JavaScript (ES6+)  
+- @hello-pangea/dnd for drag and drop  
+- canvas-confetti  
+
+## Getting Started
+
+### Install dependencies
+
+npm install
+
+### Run the development server
+
+npm run dev
+
+### Open in browser
+http://localhost:5173
